@@ -11,7 +11,7 @@ def get_groq_client(api_key=None):
         api_key = os.environ.get("GROQ_API_KEY")
         if not api_key:
             # Fallback to hardcoded (not recommended for production)
-            api_key = "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"
+            api_key = "GROQ_API_KEY"
     return Groq(api_key=api_key)
 
 # ------------------------------------------------------------
@@ -183,4 +183,4 @@ def main():
     print(narrative)
 
 if __name__ == "__main__":
-    main()
+    main()l
